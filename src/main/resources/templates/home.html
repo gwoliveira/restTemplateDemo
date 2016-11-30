@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+<title>Random User Generator | Home</title>
+<meta charset='utf-8' />
+<meta name="description"
+	content="Random user generator is a FREE API for generating placeholder user information. Get profile photos, names, and more. It's like Lorem Ipsum, for people." />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+
+<script th:src="@{/js/all.js}"></script>
+</head>
+<body>
+	<div class="frame card_offset">
+		<div class="card">
+			<div class="details">
+				<div class="user_photo horizontal_center" id="user_photo">
+					<img src="https://randomuser.me/api/portraits/women/31.jpg" />
+				</div>
+				<p id="user_title">Hi, My name is</p>
+				<p id="user_value">sara cox</p>
+			</div>
+			<ul class="values_list horizontal_center" id="values_list">
+				<li data-title="Hi, My name is" data-value="sara cox"
+					data-label="name" class="active"></li>
+				<li data-title="My email address is"
+					data-value="sara.cox47@example.com" data-label="email"
+					data-caps="false"></li>
+				<li data-title="My birthday is" data-value="7/2/1970"
+					data-label="birthday"></li>
+				<li data-title="My address is" data-value="7139 prospect rd"
+					data-label="location"></li>
+				<li data-title="My phone number is" data-value="(400)-321-1962"
+					data-label="phone"></li>
+				<li data-title="My password is" data-value="mustang1"
+					data-label="pass" data-caps="false"></li>
+			</ul>
+		</div>
+		
+		<div class="card">
+			<div class="details">
+				<div class="user_photo horizontal_center" id="user_photo">
+					<img src="https://randomuser.me/api/portraits/women/31.jpg" />
+				</div>
+				<p id="user_title">Hi, My name is</p>
+				<p id="user_value">sara cox</p>
+			</div>
+			<ul class="values_list horizontal_center" id="values_list">
+				<li data-title="Hi, My name is" data-value="sara cox"
+					data-label="name" class="active"></li>
+				<li data-title="My email address is"
+					data-value="sara.cox47@example.com" data-label="email"
+					data-caps="false"></li>
+				<li data-title="My birthday is" data-value="7/2/1970"
+					data-label="birthday"></li>
+				<li data-title="My address is" data-value="7139 prospect rd"
+					data-label="location"></li>
+				<li data-title="My phone number is" data-value="(400)-321-1962"
+					data-label="phone"></li>
+				<li data-title="My password is" data-value="mustang1"
+					data-label="pass" data-caps="false"></li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
