@@ -16,27 +16,27 @@
 </head>
 <body>
 	<div class="frame card_offset">
-		<div class="card" th:each="randomUser : ${RandomUserResponse.randomUsers}">
+		<div class="card" th:each="user : ${users}">
 			<div class="details">
 				<div class="user_photo horizontal_center" id="user_photo">
-					<img th:src="${randomUser.picture.large}" />
+					<img th:src="${user.foto}" />
 				</div>
 				<p id="user_title">Hi, My name is</p>
-				<p id="user_value" th:text="${randomUser.name}"></p>
+				<p id="user_value" th:text="${user.nome}"></p>
 			</div>
 			<ul class="values_list horizontal_center" id="values_list">
-				<li data-title="Hi, My name is" th:attr="data-value=${randomUser.name}"
+				<li data-title="Hi, My name is" th:attr="data-value=${user.nome}"
 					data-label="name" class="active"></li>
 				<li data-title="My email address is"
-					data-label="email" th:attr="data-value=${randomUser.email}"
+					data-label="email" th:attr="data-value=${user.email}"
 					data-caps="false"></li>
-				<li data-title="My birthday is" th:attr="data-value=${randomUser.nat}"
+				<li data-title="My birthday is" th:attr="data-value=${user.nascimento}"
 					data-label="birthday"></li>
-				<li data-title="My address is" th:attr="data-value=${randomUser.location}"
+				<li data-title="My address is" th:attr="data-value=${user.endereco}"
 					data-label="location"></li>
-				<li data-title="My phone number is" th:attr="data-value=${randomUser.phone}"
+				<li data-title="My phone number is" th:attr="data-value=${user.telefone}"
 					data-label="phone"></li>
-				<li data-title="My password is" th:attr="data-value=${randomUser.login.password}"
+				<li data-title="My password is" th:attr="data-value=${user.password}"
 					data-label="pass" data-caps="false"></li>
 			</ul>
 		</div>

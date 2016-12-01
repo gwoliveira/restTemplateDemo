@@ -41,6 +41,10 @@ public class Name {
 		this.last = last;
 	}
 
+	public String simpleName() {
+		return first + " " + last;
+	}
+
 	@Override
 	public String toString() {
 		return title + " " + first + " " + last;
